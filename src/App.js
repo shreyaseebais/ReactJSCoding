@@ -9,6 +9,8 @@ import WelcomeEffect from './Components/WelcomeEffect';
 import UsersAPI from './Components/UsersAPI';
 import ParentCounter from './Components/ParentChildRelation/ParentCounter';
 import ParentFormHandler from './Components/ParentChildRelation/ParentFormHandler';
+import RouteMainPage from './Components/Router/RouteMainPage';
+import FormMultipleInputs from './Components/FormMultipleInputs';
 
 export default function App() {
   const users = [
@@ -50,8 +52,10 @@ export default function App() {
       {/* {<ParentCounter/>} */}
       <p>--7--Send data from Child to Parent------------------------</p>
       {/* {<ParentFormHandler/>} */}
-        
-
+      <p>--8--Router------------------------------------------------</p>
+       {/* {<RouteMainPage/>}  */}
+      <p>--9--Multiple inputs in Form ------------------------------</p>
+      <FormMultipleInputs></FormMultipleInputs>
     </>
   );
 }
