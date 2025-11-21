@@ -7,6 +7,8 @@ import LoginControl from './Components/LoginControl';
 import NameForm from './Components/NameForm';
 import WelcomeEffect from './Components/WelcomeEffect';
 import UsersAPI from './Components/UsersAPI';
+import ParentCounter from './Components/ParentChildRelation/ParentCounter';
+import ParentFormHandler from './Components/ParentChildRelation/ParentFormHandler';
 
 export default function App() {
   const users = [
@@ -19,7 +21,7 @@ export default function App() {
 
   return (
     <>
-      <p>--UserCard Component-----------------------------------</p>
+      <p>--1--Props Component----------------------------------</p>
       {/* {users.length
         ? users.map((user, index) => (
             <UserCard
@@ -30,20 +32,26 @@ export default function App() {
             />
           ))
         : 'No users Found '} */}
-      <p>--Counter Component-----------------------------------</p>
+      <p>--2--Counter Component-----------------------------------</p>
       {/* <Counter /> */}
-      <p>--Login Component-----------------------------------</p>
+      <p>--3--Login Component--------------------------------------</p>
       {/* <LoginMessage loggedIn={true} /> */}
       <br />
       {/* <LoginMessage loggedIn={false} /> */}
-      {/* <p>--Login Control-----------------------------------</p> */}
+      {/* <p>--Login Control---------------------------------------</p> */}
       {/* <LoginControl /> */}
-      <p>--Name Form-----------------------------------</p>
+      <p>--4--Name Form---------------------------------------------</p>
       {/* <NameForm /> */}
 
-      <p>--UseEffect-----------------------------------</p>
-      <WelcomeEffect />
-      <UsersAPI />
+      <p>--5--UseEffect------------------------------------------------</p>
+      {/* <WelcomeEffect /> */}
+      {/* <UsersAPI /> */}
+      <p>--6--Send data from Child to Parent------------------------</p>
+      {/* {<ParentCounter/>} */}
+      <p>--7--Send data from Child to Parent------------------------</p>
+      {/* {<ParentFormHandler/>} */}
+        
+
     </>
   );
 }
