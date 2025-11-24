@@ -2,7 +2,7 @@ import React from 'react';
 
 function UserCard(props) {
   return (
-    <div>
+    <div style={{ color: "red", fontSize: "20px" }}>
       Name: {props.name} <br />
       Age: {props.age} <br />
       Status: {props.age >= 18 ? 'Adult' : 'Minor'}

@@ -1,6 +1,5 @@
 import React from 'react';
 import './style.css';
-import UserCard from './Components/UserCard';
 import Counter from './Components/Counter';
 import LoginMessage from './Components/LoginMessage';
 import LoginControl from './Components/LoginControl';
@@ -11,51 +10,42 @@ import ParentCounter from './Components/ParentChildRelation/ParentCounter';
 import ParentFormHandler from './Components/ParentChildRelation/ParentFormHandler';
 import RouteMainPage from './Components/Router/RouteMainPage';
 import FormMultipleInputs from './Components/FormMultipleInputs';
+import ControlledComponent from './Components/ControlledComponent';
+import UncontrolledComponent from './Components/UncontrolledComponent';
+import UserPropsChild from './Components/UserPropsChild';
+import CounterWithUseReducer from './Components/CounterWithUseReducer';
+import ProfileForm from './Components/ProfileFormUseReducer';
+import HookDashboard from './Components/HookDashboard';
+import FinanceTracker from './FinanceTrackerProj/FinanceTracker';
+import AuthenticationProject from './AuthenticationProj/Authentication';
 
 export default function App() {
-  const users = [
-    { name: 'Rohan', age: 12, city: 'Pune' },
-    { name: 'Amit', age: 15 },
-    { name: 'Sia', age: 44 },
-    { name: 'Tina', age: 13 },
-    { name: 'Kabir', age: 12 },
-  ];
-
   return (
     <>
-      <p>--1--Props Component----------------------------------</p>
-      {/* {users.length
-        ? users.map((user, index) => (
-            <UserCard
-              key={index}
-              name={user.name}
-              age={user.age}
-              city={user.city}
-            />
-          ))
-        : 'No users Found '} */}
-      <p>--2--Counter Component-----------------------------------</p>
+      {/* <UserPropsChild></UserPropsChild> */}
       {/* <Counter /> */}
-      <p>--3--Login Component--------------------------------------</p>
       {/* <LoginMessage loggedIn={true} /> */}
-      <br />
       {/* <LoginMessage loggedIn={false} /> */}
       {/* <p>--Login Control---------------------------------------</p> */}
       {/* <LoginControl /> */}
-      <p>--4--Name Form---------------------------------------------</p>
       {/* <NameForm /> */}
-
-      <p>--5--UseEffect------------------------------------------------</p>
       {/* <WelcomeEffect /> */}
       {/* <UsersAPI /> */}
-      <p>--6--Send data from Child to Parent------------------------</p>
       {/* {<ParentCounter/>} */}
-      <p>--7--Send data from Child to Parent------------------------</p>
       {/* {<ParentFormHandler/>} */}
-      <p>--8--Router------------------------------------------------</p>
-       {/* {<RouteMainPage/>}  */}
-      <p>--9--Multiple inputs in Form ------------------------------</p>
-      <FormMultipleInputs></FormMultipleInputs>
+      {/* {<RouteMainPage/>}  */}
+      {/* <FormMultipleInputs></FormMultipleInputs> */}
+      {/* <ControlledComponent></ControlledComponent>
+      <UncontrolledComponent></UncontrolledComponent> */}
+      {/* <CounterWithUseReducer></CounterWithUseReducer> */}
+      {/* <ProfileForm></ProfileForm> */}
+      {/* <HookDashboard></HookDashboard> */}
+
+      {/* Project FinanceTracker */}
+      {/* <FinanceTracker></FinanceTracker> */}
+
+      {/* Project Authentication */}
+      <AuthenticationProject></AuthenticationProject>
     </>
   );
 }

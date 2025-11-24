@@ -8,8 +8,8 @@ const root = createRoot(rootElement);
 
 root.render(
   <BrowserRouter>
-  <StrictMode>
-    <App />
-  </StrictMode>
+    <StrictMode>
+      <App />
+    </StrictMode>
   </BrowserRouter>
 );
